@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"sass/style.scss",
+		"sass/_navigation.scss",
+		"sass/_frontpage.scss",
+		"sass/_readbook.scss"
+	],
+	"sourcesContent": [
+		"/*!\nTheme Name: NaturKlur Theme\nVersion: 1.0\nDescription: Ett tema byggt för examensatbete.\nAuthor: Elin Gustafsson\n*/\n\n@import \"navigation.scss\";\n@import \"frontpage.scss\";\n@import \"readbook.scss\";\n\n\n\n\n\n/*\n\n\n\n   //READBOOK PAGE\n  .readbook {\n    margin: 50px;\n\n  }\n  .text {\n    font-size: 4rem;\n    font-weight: 600;\n    border: solid 1px orange;\n  }\n*/\n",
+		"/* NAVBAR */\n.navbar-menu {\n  padding: 20px;\n  background-color: #f6f0e9;\n  box-shadow: 0px 30px 26px -5px rgba(0,0,0,0.10);\n}\n\n.navbar-start {\n  display: flex;\n  text-transform: uppercase;\n  border: solid 1px black;\n\n\n  li {\n    display: inline-flex;\n    padding-right: 10px;\n    border: solid 1px blue;\n\n  }\n\n  a {\n    color: #fe8a8a;\n    font-weight: 400;\n  }\n\n  a:hover {\n    color: #ffc53b;\n    //border-bottom: solid 3px #F3EFF5;\n  }\n}\n",
+		"//FRONT PAGE\n.frontpage {\n  margin-top: 40px;\n  margin-left: 20px;\n\n  &__text {\n    font-size: 1.5rem;\n    font-weight: 600;\n    border: solid 1px purple;\n  }\n\n  .acf {\n    margin-top: 30px;\n    border: solid 1px green;\n\n    &__heading {\n      font-size: 1.5rem;\n      font-weight: 600;\n      text-transform: none;\n    }\n\n    &__quest {\n\n    }\n  }\n}\n",
+		".readbook {\n  margin-top: 40px;\n  margin-left: 20px;\n\n  &__text {\n    font-size: 1.5rem;\n    font-weight: 600;\n    border: solid 1px purple;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": ";AAAA;;;;;EAKE;ACLF,YAAY;;AACZ,AAAA,YAAY,CAAC;EACX,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,OAAO;EACzB,UAAU,EAAE,GAAG,CAAC,IAAI,CAAC,IAAI,CAAE,IAAG,CAAC,kBAAgB,GAChD;;;AAED,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,SAAS;EACzB,MAAM,EAAE,eAAe,GAmBxB;;EAtBD,AAME,aANW,CAMX,EAAE,CAAC;IACD,OAAO,EAAE,WAAW;IACpB,aAAa,EAAE,IAAI;IACnB,MAAM,EAAE,cAAc,GAEvB;;EAXH,AAaE,aAbW,CAaX,CAAC,CAAC;IACA,KAAK,EAAE,OAAO;IACd,WAAW,EAAE,GAAG,GACjB;;EAhBH,AAkBE,aAlBW,CAkBX,CAAC,AAAA,MAAM,CAAC;IACN,KAAK,EAAE,OAAO,GAEf;;;AC3BH,AAAA,UAAU,CAAC;EACT,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,IAAI,GAsBlB;;EApBE,AAAD,gBAAO,CAAC;IACN,SAAS,EAAE,MAAM;IACjB,WAAW,EAAE,GAAG;IAChB,MAAM,EAAE,gBAAgB,GACzB;;EARH,AAUE,UAVQ,CAUR,IAAI,CAAC;IACH,UAAU,EAAE,IAAI;IAChB,MAAM,EAAE,eAAe,GAWxB;;IAvBH,AAcI,UAdM,CAcL,aAAS,CAAC;MACT,SAAS,EAAE,MAAM;MACjB,WAAW,EAAE,GAAG;MAChB,cAAc,EAAE,IAAI,GACrB;;;ACnBL,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,IAAI,GAOlB;;EALE,AAAD,eAAO,CAAC;IACN,SAAS,EAAE,MAAM;IACjB,WAAW,EAAE,GAAG;IAChB,MAAM,EAAE,gBAAgB,GACzB;;AHOH;;;;;;;;;;;;;;EAcE"
+}

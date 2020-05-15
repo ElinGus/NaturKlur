@@ -1,0 +1,30 @@
+/* NAVBAR */
+.navbar-menu {
+  padding: 20px;
+  background-color: #f6f0e9;
+  box-shadow: 0px 30px 26px -5px rgba(0,0,0,0.10);
+}
+
+.navbar-start {
+  display: flex;
+  text-transform: uppercase;
+  border: solid 1px black;
+
+
+  li {
+    display: inline-flex;
+    padding-right: 10px;
+    border: solid 1px blue;
+
+  }
+
+  a {
+    color: #fe8a8a;
+    font-weight: 400;
+  }
+
+  a:hover {
+    color: #ffc53b;
+    //border-bottom: solid 3px #F3EFF5;
+  }
+}
