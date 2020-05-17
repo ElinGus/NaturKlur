@@ -2,7 +2,7 @@
 <?php get_template_part('template-parts/navbar'); ?>
 
 <section class="practice">
-	<div class="practice text">
+	<div class="practice__text">
 		<?php if ( have_posts() ):
 			while ( have_posts() ):
 				the_post();
@@ -12,8 +12,9 @@
 	</div>
 
 	<div class="acf">
-		<h1><?php the_field('heading'); ?></h1>
-    <p><?php the_field('question'); ?></p>
+		<h1 class="acf__heading"><?php the_field('heading'); ?></h1>
+		<p class="acf__quest"><?php $shortcode = get_post_meta($post->ID,'question',true);
+			echo do_shortcode($shortcode); ?></p>	
 	</div>
 		    <?php
 		  endwhile;

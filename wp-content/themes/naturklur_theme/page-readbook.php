@@ -9,7 +9,7 @@
 		    the_title();
 		    the_content();
 		?>
-		    <?php
+		<?php
 		  endwhile;
 		else: ?>
 
@@ -17,7 +17,13 @@
 
 		<?php endif ?>
 	</div>
+
+	<div iframe-container>
+		<iframe width="940px" height="610px" src="https://www.yumpu.com/sv/embed/view/acWFh7zDn3QiTyH2" 
+		frameborder="1" allowfullscreen="true"  allowtransparency="true"></iframe>
+	</div>
 </section>
+
 
 
 <?php get_footer(); ?>

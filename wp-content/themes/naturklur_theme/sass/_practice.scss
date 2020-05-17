@@ -1,0 +1,27 @@
+
+.practice {
+    margin-top: 40px;
+    margin-left: 20px;
+  
+    &__text {
+      font-size: 1.5rem;
+      font-weight: 600;
+      //border: solid 1px purple;
+    }
+  
+    .acf {
+      margin-top: 30px;
+      //border: solid 1px green;
+  
+      &__heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: none;
+      }
+
+      &__quest {
+        margin-top: 20px;
+        //border: solid 1px purple;
+      }
+    }
+  }

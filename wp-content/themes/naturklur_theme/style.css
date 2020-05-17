@@ -5,7 +5,7 @@ Version: 1.0
 Description: Ett tema byggt för examensatbete.
 Author: Elin Gustafsson
 */
-
+/* NAVBAR */
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
 .navbar-menu {
   padding: 20px;
@@ -15,13 +15,11 @@ Author: Elin Gustafsson
 /* line 8, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
 .navbar-start {
   display: flex;
-  text-transform: uppercase;
-  border: solid 1px black; }
+  text-transform: uppercase; }
   /* line 14, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
   .navbar-start li {
     display: inline-flex;
-    padding-right: 10px;
-    border: solid 1px blue; }
+    padding-right: 10px; }
   /* line 21, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
   .navbar-start a {
     color: #fe8a8a;
@@ -49,18 +47,64 @@ Author: Elin Gustafsson
       font-weight: 600;
       text-transform: none; }
 
-/* line 1, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+/* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
 .readbook {
   margin-top: 40px;
-  margin-left: 20px; }
-  /* line 5, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+  margin-left: 50px; }
+  /* line 6, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
   .readbook__text {
     font-size: 1.5rem;
     font-weight: 600;
-    border: solid 1px purple; }
+    margin-bottom: 30px; }
 
-/*
+/* line 15, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+.iframe-container .eagle-page-container {
+  border: solid 3px green; }
 
+/* line 18, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+.iframe-container iframe {
+  margin-top: 40px;
+  margin-left: 60px;
+  border: solid 1px green;
+  display: flexbox;
+  justify-content: center; }
 
+/* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+.practice {
+  margin-top: 40px;
+  margin-left: 20px; }
+  /* line 6, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+  .practice__text {
+    font-size: 1.5rem;
+    font-weight: 600; }
+  /* line 12, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+  .practice .acf {
+    margin-top: 30px; }
+    /* line 16, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+    .practice .acf__heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: none; }
+    /* line 22, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+    .practice .acf__quest {
+      margin-top: 20px; }
+
+/* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+.words {
+  margin-top: 40px;
+  margin-left: 20px; }
+  /* line 6, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+  .words__text {
+    font-size: 1.5rem;
+    font-weight: 600; }
+  /* line 12, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+  .words .acf {
+    margin-top: 30px;
+    border: solid 1px green; }
+    /* line 16, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+    .words .acf__heading {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: none; }
 
 /*# sourceMappingURL=style.css.map */

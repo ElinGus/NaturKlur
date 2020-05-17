@@ -23,7 +23,7 @@ function func_wp_vue(){
 
   //Build String
   $str= "<div id='divWpVue'>"
-    ."Message from Vue: {{ message }}"
+    ."Message from Vue: {{ iframe }}"
     ."</div>";
 
   //Return to display
