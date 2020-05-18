@@ -1,0 +1,35 @@
+
+.test {
+  margin-top: 60px;
+  margin-left: 100px;
+
+  &__heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__word-list {
+      margin-top: 30px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      width: 200px;
+      //border: solid 2px red;
+  }
+
+  &__letter li {
+    margin-top: 30px;
+    //border: solid 2px rebeccapurple;
+
+    &--underline {
+      border-bottom: solid 4px #43b7bf;
+      transition: linear;
+      width: 200px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__words li {
+    border: solid 2px rebeccapurple;
+  }
+
+}

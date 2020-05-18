@@ -49,25 +49,28 @@ Author: Elin Gustafsson
 
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
 .readbook {
-  margin-top: 40px;
-  margin-left: 50px; }
+  margin-top: 60px;
+  margin-left: 100px; }
   /* line 6, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
   .readbook__text {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 30px; }
-
-/* line 15, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
-.iframe-container .eagle-page-container {
-  border: solid 3px green; }
-
-/* line 18, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
-.iframe-container iframe {
-  margin-top: 40px;
-  margin-left: 60px;
-  border: solid 1px green;
-  display: flexbox;
-  justify-content: center; }
+  /* line 13, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+  .readbook__richtext {
+    width: 940px;
+    margin-top: 20px;
+    margin-bottom: 50px; }
+  /* line 21, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+  .readbook .iframe-container .eagle-page-container {
+    border: solid 3px green; }
+  /* line 24, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+  .readbook .iframe-container iframe {
+    margin-top: 40px;
+    margin-left: 60px;
+    border: solid 1px green;
+    display: flexbox;
+    justify-content: center; }
 
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
 .practice {
@@ -90,21 +93,56 @@ Author: Elin Gustafsson
       margin-top: 20px; }
 
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-.words {
-  margin-top: 40px;
-  margin-left: 20px; }
+.trickywords {
+  margin-top: 60px;
+  margin-left: 100px; }
   /* line 6, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-  .words__text {
+  .trickywords__heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px; }
+  /* line 13, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+  .trickywords__letter {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 200px; }
+    /* line 20, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+    .trickywords__letter--underline {
+      border-bottom: solid 4px #43b7bf;
+      transition: linear;
+      width: 200px; }
+  /* line 28, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+  .trickywords__words {
+    display: block;
+    width: 300px;
+    margin-top: 10px; }
+
+/* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+.test {
+  margin-top: 60px;
+  margin-left: 100px; }
+  /* line 6, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+  .test__heading {
     font-size: 1.5rem;
     font-weight: 600; }
-  /* line 12, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-  .words .acf {
+  /* line 11, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+  .test__word-list {
     margin-top: 30px;
-    border: solid 1px green; }
-    /* line 16, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-    .words .acf__heading {
-      font-size: 1.5rem;
-      font-weight: 600;
-      text-transform: none; }
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 200px; }
+  /* line 19, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+  .test__letter li {
+    margin-top: 30px; }
+    /* line 23, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+    .test__letter li--underline {
+      border-bottom: solid 4px #43b7bf;
+      transition: linear;
+      width: 200px;
+      margin-bottom: 40px; }
+  /* line 31, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+  .test__words li {
+    border: solid 2px rebeccapurple; }
 
 /*# sourceMappingURL=style.css.map */

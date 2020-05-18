@@ -17,6 +17,9 @@
 
 		<?php endif ?>
 	</div>
+	<div class="readbook__richtext">
+		<?php the_field('rich_text'); ?>
+	</div>
 
 	<div iframe-container>
 		<iframe width="940px" height="610px" src="https://www.yumpu.com/sv/embed/view/acWFh7zDn3QiTyH2" 

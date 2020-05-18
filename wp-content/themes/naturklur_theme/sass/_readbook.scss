@@ -1,15 +1,21 @@
 
 .readbook {
-  margin-top: 40px;
-  margin-left: 50px;
+  margin-top: 60px;
+  margin-left: 100px;
 
   &__text {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 30px;
     //border: solid 1px purple;
-  } 
-}
+  }
+  
+  &__richtext {
+    width: 940px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
   .iframe-container  {
 
     .eagle-page-container {
@@ -23,4 +29,4 @@
       justify-content: center;
     }
   } 
-
+}

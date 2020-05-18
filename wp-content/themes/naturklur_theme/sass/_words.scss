@@ -1,22 +1,35 @@
 
-.words {
-    margin-top: 40px;
-    margin-left: 20px;
+.trickywords {
+  margin-top: 60px;
+  margin-left: 100px;
   
-    &__text {
+    &__heading {
       font-size: 1.5rem;
       font-weight: 600;
+      margin-bottom: 30px;
       //border: solid 1px purple;
     }
   
-    .acf {
+    &__letter {
       margin-top: 30px;
-      border: solid 1px green;
-  
-      &__heading {
-        font-size: 1.5rem;
-        font-weight: 600;
-        text-transform: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+      width: 200px;
+      //border: solid 1px green;
+
+      &--underline {
+        border-bottom: solid 4px #43b7bf;
+        transition: linear;
+        width: 200px;
+      //border: solid 1px green;
       }
     }
+
+    &__words {
+      display: block;
+      //border: solid 1px green;
+      width: 300px;
+      margin-top: 10px;
+    }
+    
   }
