@@ -13,33 +13,30 @@
       font-size: 1.3rem;
       font-weight: 600;
       width: 200px;
-      //border: solid 2px red;
-  }
-
-  &__letter li {
-    font-weight: bold;
-    margin-top: 30px;
-    border: solid 2px green;
-
-    &--underline {
-      border-bottom: solid 4px #43b7bf;
-      transition: linear;
-      width: 200px;
+      //border: solid 2px red; 
       
-    }
+      &--letter  {
+        font-weight: bold;
+        margin-top: 30px;
+        //border: solid 2px green;
+      }
+
+      &--underline {
+        border-bottom: solid 4px #37aa3785;
+        transition: linear;
+        width: 200px;
+        
+      }
   }
 
   &__words {
-    border: solid 2px rgb(255, 196, 0);
     margin-top: 10px;
     margin-bottom: 10px;
 
     li {
       font-weight: lighter;
-      border: solid 2px rebeccapurple;
+      //border: solid 2px rebeccapurple;
     }
   }
   
-  
-
 }

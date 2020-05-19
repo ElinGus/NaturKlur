@@ -12,37 +12,32 @@
 	</div>
 
 	<div class="test__word-list">
-	
 		<?php	// check if the flexible content field has rows of data
-			if( have_rows('word_list') ): ?>
+			if( have_rows('word_list') ): ?>		
+					
+				<?php while ( have_rows('word_list') ) : the_row(); ?>
+				<?php if( get_row_layout() == 'category_letter' ): ?>
+				<div class="test__word-list--letter"><?php the_sub_field('letter'); ?></div>
+				<div class="test__word-list--underline"></div>
+					
+			<div class="test__words">
 				<ul>
-				<div class="test__letter">	
-					<?php while ( have_rows('word_list') ) : the_row(); ?>
-					<?php if( get_row_layout() == 'category_letter' ): ?>
-						<li><?php the_sub_field('letter'); ?></li>
-						<div class="trickywords__letter--underline"></div>
-					</div>	
-					<div class="test__words">
-						<?php elseif( get_row_layout() == 'add_words' ): ?>			
-							<?php if( have_rows('list_of_words') ): ?>
-								<?php while ( have_rows('list_of_words') ) : the_row(); ?>
-									<li <?php if( get_sub_field('words') )?>>
-										<?php the_sub_field('words'); ?>
-									</li>
-								<?php endwhile; ?>
-							<?php endif; ?>									
-						<?php endif; ?>
-					<?php endwhile; ?>
-				</div>
+					<?php elseif( get_row_layout() == 'add_words' ): ?>			
+						<?php if( have_rows('list_of_words') ): ?>
+							<?php while ( have_rows('list_of_words') ) : the_row(); ?>
+								<li <?php if( get_sub_field('words') )?>>
+									<?php the_sub_field('words'); ?>
+								</li>
+							<?php endwhile; ?>
+						<?php endif; ?>									
+					<?php endif; ?>
+				<?php endwhile; ?>
 				</ul>
-				
+			</div>
 				
 				<?php else :
-
 				// no layouts found
-
-			endif; ?>
-	
+			endif; ?>	
 	</div>
 
 

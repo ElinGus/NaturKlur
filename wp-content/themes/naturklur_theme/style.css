@@ -132,24 +132,21 @@ Author: Elin Gustafsson
     font-size: 1.3rem;
     font-weight: 600;
     width: 200px; }
-  /* line 19, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
-  .test__letter li {
-    font-weight: bold;
-    margin-top: 30px;
-    border: solid 2px green; }
+    /* line 18, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+    .test__word-list--letter {
+      font-weight: bold;
+      margin-top: 30px; }
     /* line 24, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
-    .test__letter li--underline {
-      border-bottom: solid 4px #43b7bf;
+    .test__word-list--underline {
+      border-bottom: solid 4px #37aa3785;
       transition: linear;
       width: 200px; }
   /* line 32, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
   .test__words {
-    border: solid 2px #ffc400;
     margin-top: 10px;
     margin-bottom: 10px; }
-    /* line 37, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+    /* line 36, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
     .test__words li {
-      font-weight: lighter;
-      border: solid 2px rebeccapurple; }
+      font-weight: lighter; }
 
 /*# sourceMappingURL=style.css.map */
