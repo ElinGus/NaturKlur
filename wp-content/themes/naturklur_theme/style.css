@@ -99,24 +99,29 @@ Author: Elin Gustafsson
   /* line 6, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
   .trickywords__heading {
     font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 30px; }
-  /* line 13, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-  .trickywords__letter {
+    font-weight: 600; }
+  /* line 11, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+  .trickywords__word-list {
     margin-top: 30px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     width: 200px; }
-    /* line 20, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-    .trickywords__letter--underline {
-      border-bottom: solid 4px #43b7bf;
+    /* line 18, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+    .trickywords__word-list--letter {
+      font-weight: bold;
+      margin-top: 30px; }
+    /* line 24, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+    .trickywords__word-list--underline {
+      border-bottom: solid 4px #37aa3785;
       transition: linear;
       width: 200px; }
-  /* line 28, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+  /* line 32, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
   .trickywords__words {
-    display: block;
-    width: 300px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    /* line 36, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
+    .trickywords__words li {
+      font-weight: lighter; }
 
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
 .test {

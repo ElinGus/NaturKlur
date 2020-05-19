@@ -9,33 +9,36 @@
 		    the_title();
 		    the_content();
 		?>
+
+	
+	<div class="trickywords__word-list">
+		<?php	// check if the flexible content field has rows of data
+			if( have_rows('word_list') ): ?>		
+					
+				<?php while ( have_rows('word_list') ) : the_row(); ?>
+				<?php if( get_row_layout() == 'category_letter' ): ?>
+				<div class="trickywords__word-list--letter"><?php the_sub_field('letter'); ?></div>
+				<div class="trickywords__word-list--underline"></div>
+					
+			<div class="trickywords__words">
+				<ul>
+					<?php elseif( get_row_layout() == 'add_words' ): ?>			
+						<?php if( have_rows('list_of_words') ): ?>
+							<?php while ( have_rows('list_of_words') ) : the_row(); ?>
+								<li <?php if( get_sub_field('words') )?>>
+									<?php the_sub_field('words'); ?>
+								</li>
+							<?php endwhile; ?>
+						<?php endif; ?>									
+					<?php endif; ?>
+				<?php endwhile; ?>
+				</ul>
+			</div>
+				
+				<?php else :
+				// no layouts found
+			endif; ?>	
 	</div>
-
-	<div class="trickywords__letter">
-		<?php the_field('category_letter'); ?>
-		<div class="trickywords__letter--underline"></div>
-	</div>
-	<div class="trickywords__words">
-	<?php
-
-// check if the repeater field has rows of data
-if( have_rows('words') ):
- 	// loop through the rows of data
-    while ( have_rows('words') ) : the_row();
-        // display a sub field value
-        the_sub_field('the_word');
-
-    endwhile;
-
-else :
-
-    // no rows found
-
-endif;
-
-?>
-	</div>
-
 
 
 	<?php
