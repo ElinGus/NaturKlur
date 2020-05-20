@@ -1,21 +1,50 @@
 
-.test {
-  margin-top: 60px;
-  margin-left: 100px;
-  margin-right: 600px;
+<div class="test__rich-text"><?php the_field('rich_text'); ?></div>
 
-  &__heading {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
+	<div class="test__accordion">
+	<?php if(get_field('accordion')): ?>
+		<div class="test__accordion--tryckyword">
+			<ul>
+			<?php while(has_sub_field('accordion')): ?>
+				<div class="tes__accordion--word"><li><?php the_sub_field('word'); ?></li></div>
+				<div class="tes__accordion--desc"><?php the_sub_field('description'); ?></div>
+				
+			<?php endwhile; ?>
+			</ul>
+		</div>
+	<?php endif; ?>
+	</div>
 
-  &__rich-text{
-      margin-top: 30px;
-      margin-bottom: 30px;
-      border: solid 2px red; 
-  }
 
-  /* Style the buttons that are used to open and close the accordion panel */
+
+<?php
+
+// check if the repeater field has rows of data
+if( have_rows('accordion') ):
+
+ 	// loop through the rows of data
+    while ( have_rows('accordion') ) : the_row();
+    <ul>
+        // display a sub field value
+        <li><?php the_sub_field('word'); ?></li>
+        <?php the_sub_field('description'); ?>
+
+    endwhile;
+    </ul>
+else :
+
+    // no rows found
+
+endif;
+
+?>
+
+
+
+
+STYLE FÖR KLURIGA FRÅGOR 
+
+/* Style the buttons that are used to open and close the accordion panel */
   .accordion {
     background-color: yellow;
     color: black;
@@ -31,7 +60,6 @@
     font-size: 1rem;
     font-weight: 600;
     border-radius: 10px;
-    border: solid 2px red; 
   }
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -41,7 +69,6 @@
     background-color: orange;
     background: orange;
     border-radius: 10px;
-    border: solid 2px green; 
   }
 
   /* Style the accordion panel. Note: hidden by default */
@@ -51,7 +78,6 @@
     display: none;
     overflow: hidden;
     border-radius: 10px;
-    border: solid 2px purple; 
   }
 
   .accordion:after {
@@ -60,13 +86,8 @@
     color: green;
     float: right;
     margin-left: 5px;
-    border: solid 2px blue; 
   }
 
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-    border: solid 2px brown; 
   }
-  
-}
-
