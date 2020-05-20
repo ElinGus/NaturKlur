@@ -124,7 +124,7 @@ Author: Elin Gustafsson
     .trickywords__words li {
       font-weight: lighter; }
 
-/* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+/* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
 .test {
   margin-top: 60px;
   margin-left: 100px;
@@ -132,19 +132,18 @@ Author: Elin Gustafsson
   /* Style the buttons that are used to open and close the accordion panel */
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   /* Style the accordion panel. Note: hidden by default */ }
-  /* line 7, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+  /* line 7, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .test__heading {
     font-size: 1.5rem;
     font-weight: 600; }
-  /* line 12, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+  /* line 12, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .test__rich-text {
     margin-top: 30px;
-    margin-bottom: 30px;
-    border: solid 2px red; }
-  /* line 19, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+    margin-bottom: 100px; }
+  /* line 19, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .test .accordion {
-    background-color: yellow;
-    color: black;
+    background-color: #fe8a8a;
+    color: #4a4a4a;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -156,37 +155,31 @@ Author: Elin Gustafsson
     border: none;
     font-size: 1rem;
     font-weight: 600;
-    border-radius: 10px;
-    border: solid 2px red; }
-  /* line 38, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+    border-radius: 10px; }
+  /* line 38, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .test .active,
   .test .accordion:hover,
   .test button:focus {
-    background-color: orange;
-    background: orange;
-    border-radius: 10px;
-    border: solid 2px green; }
-  /* line 48, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+    background-color: #ffc53b;
+    background: #ffc53b;
+    border-radius: 10px; }
+  /* line 48, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .test .panel {
     padding: 0 18px;
-    background-color: lightgrey;
+    background-color: #f6f0e9;
     display: none;
     overflow: hidden;
-    border-radius: 10px;
-    border: solid 2px purple; }
-  /* line 57, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+    border-radius: 10px; }
+  /* line 57, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .test .accordion:after {
     content: '\02795';
     /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: green;
     float: right;
-    margin-left: 5px;
-    border: solid 2px blue; }
-  /* line 66, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_test.scss */
+    margin-left: 5px; }
+  /* line 66, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .test .active:after {
     content: "\2796";
-    /* Unicode character for "minus" sign (-) */
-    border: solid 2px brown; }
+    /* Unicode character for "minus" sign (-) */ }
 
 /*# sourceMappingURL=style.css.map */

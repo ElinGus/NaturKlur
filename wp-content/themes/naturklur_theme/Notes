@@ -91,3 +91,52 @@ STYLE FÖR KLURIGA FRÅGOR
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
+
+
+
+
+  ___________________________________________________________________
+
+
+
+.trickywords {
+  margin-top: 60px;
+  margin-left: 100px;
+
+  &__heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__word-list {
+      margin-top: 30px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      width: 200px;
+      //border: solid 2px red; 
+      
+      &--letter  {
+        font-weight: bold;
+        margin-top: 30px;
+        //border: solid 2px green;
+      }
+
+      &--underline {
+        border-bottom: solid 4px #37aa3785;
+        transition: linear;
+        width: 200px;
+        
+      }
+  }
+
+  &__words {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    li {
+      font-weight: lighter;
+      //border: solid 2px rebeccapurple;
+    }
+  }
+  
+}

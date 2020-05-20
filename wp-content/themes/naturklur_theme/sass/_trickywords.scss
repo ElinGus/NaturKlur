@@ -11,14 +11,14 @@
 
   &__rich-text{
       margin-top: 30px;
-      margin-bottom: 30px;
-      border: solid 2px red; 
+      margin-bottom: 100px;
+      //border: solid 2px red; 
   }
 
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
-    background-color: yellow;
-    color: black;
+    background-color: #fe8a8a;
+    color: #4a4a4a;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -31,41 +31,41 @@
     font-size: 1rem;
     font-weight: 600;
     border-radius: 10px;
-    border: solid 2px red; 
+    //border: solid 2px red; 
   }
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, 
   .accordion:hover,
   button:focus {
-    background-color: orange;
-    background: orange;
+    background-color: #ffc53b;
+    background: #ffc53b;
     border-radius: 10px;
-    border: solid 2px green; 
+    //border: solid 2px green; 
   }
 
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
-    background-color:lightgrey;
+    background-color:#f6f0e9;
     display: none;
     overflow: hidden;
     border-radius: 10px;
-    border: solid 2px purple; 
+    //border: solid 2px purple; 
   }
 
   .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: green;
+    //color: green;
     float: right;
     margin-left: 5px;
-    border: solid 2px blue; 
+    //border: solid 2px blue; 
   }
 
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-    border: solid 2px brown; 
+    //border: solid 2px brown; 
   }
   
 }

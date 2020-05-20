@@ -10,6 +10,42 @@
 		    the_content();
 		?>
 
+	<div class="test__rich-text"><?php the_field('rich_text'); ?></div>
+	
+	<?php
+	// check if the repeater field has rows of data
+	if( have_rows('accordion') ):
+		
+		// loop through the rows of data for the tab header
+		while ( have_rows('accordion') ) : the_row();
+			
+			$word = get_sub_field('word');
+			$description = get_sub_field('description');
+
+	?>
+			<button class="accordion"><?php echo $word; ?></button>
+			
+			<div class="panel">
+				<p><?php echo $description; ?></p>
+			</div>    
+		<?php
+		endwhile; //End the loop 
+
+	else :
+
+		// no rows found
+		echo 'Come back tomorrow';
+
+	endif;
+
+	?>
+
+
+
+
+
+
+
 	
 	<div class="trickywords__word-list">
 		<?php	// check if the flexible content field has rows of data
