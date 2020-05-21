@@ -11,15 +11,13 @@
 		?>
 	</div>
 
-	<div class="acf">
-		<h1 class="acf__heading"><?php the_field('heading'); ?></h1>
-    <p class="acf__quest"><?php the_field('question'); ?></p>
-	</div>
-		    <?php
-		  endwhile;
-		else: ?>
-			<p>Sorry, no posts.</p>
+
+	<?php // Slutet på wp-loopen
+	endwhile;
+	else: 
+	?>
+		<p>Sorry, no posts.</p>
 		<?php endif ?>
-</section>
+
 
 <?php get_footer(); ?>

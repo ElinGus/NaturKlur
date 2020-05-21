@@ -16,37 +16,27 @@ Author: Elin Gustafsson
 .navbar-start {
   display: flex;
   text-transform: uppercase;
-  margin-left: 100px; }
+  margin-left: 80px; }
   /* line 15, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
   .navbar-start li {
     display: inline-flex;
     padding-right: 10px; }
   /* line 23, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
   .navbar-start a {
-    color: #fe8a8a;
-    font-weight: 400; }
+    color: #2e4e9e;
+    font-weight: 800; }
   /* line 28, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
   .navbar-start a:hover {
-    color: #ffc53b; }
+    color: #37aa85; }
 
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
 .frontpage {
-  margin-top: 40px;
-  margin-left: 20px; }
+  margin-top: 60px;
+  margin-left: 100px; }
   /* line 6, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
   .frontpage__text {
     font-size: 1.5rem;
-    font-weight: 600;
-    border: solid 1px purple; }
-  /* line 12, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
-  .frontpage .acf {
-    margin-top: 30px;
-    border: solid 1px green; }
-    /* line 16, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
-    .frontpage .acf__heading {
-      font-size: 1.5rem;
-      font-weight: 600;
-      text-transform: none; }
+    font-weight: 600; }
 
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
 .readbook {
@@ -75,23 +65,12 @@ Author: Elin Gustafsson
 
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
 .practice {
-  margin-top: 40px;
-  margin-left: 20px; }
+  margin-top: 60px;
+  margin-left: 100px; }
   /* line 6, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
   .practice__text {
     font-size: 1.5rem;
     font-weight: 600; }
-  /* line 12, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
-  .practice .acf {
-    margin-top: 30px; }
-    /* line 16, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
-    .practice .acf__heading {
-      font-size: 1.5rem;
-      font-weight: 600;
-      text-transform: none; }
-    /* line 22, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
-    .practice .acf__quest {
-      margin-top: 20px; }
 
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
 .trickywords {
@@ -128,7 +107,7 @@ Author: Elin Gustafsson
 .test {
   margin-top: 60px;
   margin-left: 100px;
-  margin-right: 600px;
+  margin-right: 800px;
   /* Style the buttons that are used to open and close the accordion panel */
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   /* Style the accordion panel. Note: hidden by default */ }
@@ -147,13 +126,12 @@ Author: Elin Gustafsson
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
     margin-bottom: 10px;
     border: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     border-radius: 10px; }
   /* line 38, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */

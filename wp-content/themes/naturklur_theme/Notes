@@ -1,3 +1,11 @@
+FÄRGER:
+
+Blå: #2e4e9e
+Grön: #37aa85
+Krämvit: #f6f0e9
+Rosa: #fe8a8a
+Gul: #ffc53b
+
 
 <div class="test__rich-text"><?php the_field('rich_text'); ?></div>
 
