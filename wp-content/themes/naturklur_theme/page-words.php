@@ -40,12 +40,6 @@
 
 	?>
 
-
-
-
-
-
-
 	
 	<div class="trickywords__word-list">
 		<?php	// check if the flexible content field has rows of data
@@ -71,17 +65,21 @@
 				</ul>
 			</div>
 				
-				<?php else :
-				// no layouts found
-			endif; ?>	
+		<?php else :
+		// no layouts found
+		endif; ?>	
 	</div>
 
+	
+</section>
 
-	<?php
+
+
+	<?php // Slut på loopen.
 	endwhile;
 	else: ?>
 		<p>Sorry, no posts.</p>
 	<?php endif ?>
-</section>
+
 
 <?php get_footer(); ?>

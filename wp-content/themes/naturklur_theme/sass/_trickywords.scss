@@ -1,8 +1,12 @@
 
 .test {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin-top: 60px;
   margin-left: 100px;
   margin-right: 800px;
+  align-items: center;
 
   &__heading {
     font-size: 1.5rem;
@@ -34,7 +38,8 @@
     //border: solid 2px red; 
   }
 
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), 
+    and when you move the mouse over it (hover) */
   .active, 
   .accordion:hover,
   button:focus {
