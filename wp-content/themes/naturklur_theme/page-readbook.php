@@ -11,14 +11,15 @@
 		?>		
 	</div>
 
-	<div class="readbook__richtext">
-		<?php the_field('rich_text'); ?>
-	</div>
 
-	<div iframe-container>
-		<iframe width="940px" height="610px" src="https://www.yumpu.com/sv/embed/view/acWFh7zDn3QiTyH2" 
-		frameborder="1" allowfullscreen="true"  allowtransparency="true"></iframe>
-	</div>
+
+		<div class="readbook__iframe-container">
+			<div class="textblock"><?php the_field('rich_text'); ?></div>
+
+			<iframe width="940px" height="610px" src="https://www.yumpu.com/sv/embed/view/acWFh7zDn3QiTyH2" 
+			frameborder="1" allowfullscreen="true"  allowtransparency="true"></iframe>
+		</div>
+	
 
 </section>
 

@@ -2,6 +2,7 @@
 .readbook {
   margin-top: 60px;
   margin-left: 100px;
+  margin-right: 100px;
 
   &__text {
     font-size: 1.5rem;
@@ -10,24 +11,26 @@
     //border: solid 1px purple;
   }
   
-  &__richtext {
-    width: 940px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
+    &__iframe-container  {
+      display: flex;
+      margin-bottom: 100px;
+      border: solid 2px green;
+      flex-direction: column;
 
-  .iframe-container  {
-    margin-bottom: 100px;
+      .textblock {
+        border: solid 2px red;
+        width: 940px;
+        justify-content: center;
+      }
+  
+      iframe {
+        display: flex;
+        margin-top: 40px;
+        border: solid 1px lightgray;
+        display: flexbox;
+        justify-content: center;
+        border: solid 2px blue;
+      }
+    } 
 
-    .eagle-page-container {
-      border: solid 3px green;
-    }
-    iframe {
-      margin-top: 40px;
-      margin-left: 60px;
-      border: solid 1px green;
-      display: flexbox;
-      justify-content: center;
-    }
-  } 
 }
