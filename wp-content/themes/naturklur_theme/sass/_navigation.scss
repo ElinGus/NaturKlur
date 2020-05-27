@@ -1,3 +1,4 @@
+/* NAVBAR */
 
 .navbar-menu {
   padding: 20px;
@@ -7,9 +8,16 @@
 
 .navbar-start {
   display: flex;
+  //text-transform: uppercase;
+  //border: solid 2px black;
+  margin-left: 60px;
+}
+
+.navbar-end {
+  display: flex;
   text-transform: uppercase;
   //border: solid 2px black;
-  margin-left: 80px;
+  //margin-left: 60px;
 
 
   li {
@@ -30,3 +38,9 @@
     //border-bottom: solid 3px #F3EFF5;
   }
 }
+
+
+
+
+
+

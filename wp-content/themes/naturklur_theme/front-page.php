@@ -10,6 +10,21 @@
 		    the_content();
 		?>
 	</div>
+	
+	<div class="frontpage__pagefields">
+		<div class="frontpage__pagefields--textblock"><?php the_field('startsida_textblock'); ?></div>
+
+		<div class="frontpage__pagefields--image">
+			<?php 
+			$image = get_field('startsida_bild');
+			if( !empty( $image ) ): ?>
+				<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+			<?php endif; ?>
+		</div>
+	</div>
+
+</section>
+
 
 
 	<?php // Slutet på wp-loopen

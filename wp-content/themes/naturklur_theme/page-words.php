@@ -10,68 +10,30 @@
 		    the_content();
 		?>
 
-	<div class="test__rich-text"><?php the_field('rich_text'); ?></div>
-	
-	<?php
-	// check if the repeater field has rows of data
-	if( have_rows('accordion') ):
-		
-		// loop through the rows of data for the tab header
-		while ( have_rows('accordion') ) : the_row();
+	<div id="quiz">	
+		<?php if( have_rows('question_group') ): $i=1; ?>
 			
-			$word = get_sub_field('word');
-			$description = get_sub_field('description');
+			<?php while(have_rows('question_group') ) : the_row(); ?>
 
-	?>
-			<button class="accordion"><?php echo $word; ?></button>
-			
-			<div class="panel">
-				<p><?php echo $description; ?></p>
-			</div>    
-		<?php
-		endwhile; //End the loop 
-
-	else :
-
-		// no rows found
-		echo 'Come back tomorrow';
-
-	endif;
-
-	?>
-
-	
-	<div class="trickywords__word-list">
-		<?php	// check if the flexible content field has rows of data
-			if( have_rows('word_list') ): ?>		
-					
-				<?php while ( have_rows('word_list') ) : the_row(); ?>
-				<?php if( get_row_layout() == 'category_letter' ): ?>
-				<div class="trickywords__word-list--letter"><?php the_sub_field('letter'); ?></div>
-				<div class="trickywords__word-list--underline"></div>
-					
-			<div class="trickywords__words">
-				<ul>
-					<?php elseif( get_row_layout() == 'add_words' ): ?>			
-						<?php if( have_rows('list_of_words') ): ?>
-							<?php while ( have_rows('list_of_words') ) : the_row(); ?>
-								<li <?php if( get_sub_field('words') )?>>
-									<?php the_sub_field('words'); ?>
-								</li>
-							<?php endwhile; ?>
-						<?php endif; ?>									
-					<?php endif; ?>
-				<?php endwhile; ?>
-				</ul>
-			</div>
+				<div class="question">
+					<p><?php the_sub_field('question'); ?></p>
+					<input type="radio" name="answer<?php echo $i; ?>" value="Yes" class="yes" />Yes<br />
+					<input type="radio" name="answer<?php echo $i; ?>" value="No" class="no" />No
+				</div>
 				
-		<?php else :
-		// no layouts found
-		endif; ?>	
-	</div>
+		<?php $i++; endwhile; ?>
+		<?php else : 
+			// no rows found ?>
+		<?php endif; ?>
+		
+		<a id="submit">Submit</a>
 
-	
+	</div>
 </section>
+
+
+
+
 
 
 
@@ -80,6 +42,7 @@
 	else: ?>
 		<p>Sorry, no posts.</p>
 	<?php endif ?>
+
 
 
 <?php get_footer(); ?>

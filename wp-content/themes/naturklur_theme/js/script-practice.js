@@ -1,43 +1,19 @@
-<nav>
-  <div class="navbar-menu">
-    <div class="navbar-start">
-     <?php
-        wp_nav_menu( array(
-            'theme_location' => 'header-menu',
-        ) );
-      ?>
-    </div>
-
-    <div class="navbar-end">
-
-    </div>
-  </div>
-</nav>
+// PRACTICE PAGE 
 
 
-///////
 
-<nav>
-  <!--<div class="navbar-menu">
-    <div class="navbar-start">
-      // wp-menu
-      <?php
-        wp_nav_menu( array(
-            'theme_location' => 'header-menu',
-        ) );
-      ?>
-    </div>
 
-    <div class="navbar-end">
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-  </div>
-</nav>
-        -->
+
+
+
+
+
+
+
+
+
+
+
 
 // --------------- TEST 2 ---------------------------------------------------------
 /*
@@ -280,167 +256,3 @@ $('#submitButton').click(function() {
     nextButton.addEventListener("click", showNextSlide);
   })(); 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-__________________________________________________________________________________________
-
-FÄRGER:
-
-Blå: #2e4e9e
-Grön: #37aa85
-Krämvit: #f6f0e9
-Rosa: #fe8a8a
-Gul: #ffc53b
-
-
-<div class="test__rich-text"><?php the_field('rich_text'); ?></div>
-
-	<div class="test__accordion">
-	<?php if(get_field('accordion')): ?>
-		<div class="test__accordion--tryckyword">
-			<ul>
-			<?php while(has_sub_field('accordion')): ?>
-				<div class="test__accordion--word"><li><?php the_sub_field('word'); ?></li></div>
-				<div class="test__accordion--desc"><?php the_sub_field('description'); ?></div>
-				
-			<?php endwhile; ?>
-			</ul>
-		</div>
-	<?php endif; ?>
-	</div>
-
-
-
-<?php
-
-// check if the repeater field has rows of data
-if( have_rows('accordion') ):
-
- 	// loop through the rows of data
-    while ( have_rows('accordion') ) : the_row();
-    <ul>
-        // display a sub field value
-        <li><?php the_sub_field('word'); ?></li>
-        <?php the_sub_field('description'); ?>
-
-    endwhile;
-    </ul>
-else :
-
-    // no rows found
-
-endif;
-
-?>
-
-
-
-
-STYLE FÖR KLURIGA FRÅGOR 
-
-/* Style the buttons that are used to open and close the accordion panel */
-  .accordion {
-    background-color: yellow;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin-bottom: 10px;
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 10px;
-  }
-
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, 
-  .accordion:hover,
-  button:focus {
-    background-color: orange;
-    background: orange;
-    border-radius: 10px;
-  }
-
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color:lightgrey;
-    display: none;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-
-  .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: green;
-    float: right;
-    margin-left: 5px;
-  }
-
-  .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
-
-
-
-
-  ___________________________________________________________________
-
-
-
-.trickywords {
-  margin-top: 60px;
-  margin-left: 100px;
-
-  &__heading {
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
-
-  &__word-list {
-      margin-top: 30px;
-      font-size: 1.3rem;
-      font-weight: 600;
-      width: 200px;
-      //border: solid 2px red; 
-      
-      &--letter  {
-        font-weight: bold;
-        margin-top: 30px;
-        //border: solid 2px green;
-      }
-
-      &--underline {
-        border-bottom: solid 4px #37aa3785;
-        transition: linear;
-        width: 200px;
-        
-      }
-  }
-
-  &__words {
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    li {
-      font-weight: lighter;
-      //border: solid 2px rebeccapurple;
-    }
-  }
-  
-}

@@ -11,9 +11,10 @@
 		?>
 	</div>
 
-<!-- ACF - TRICKY WORDS PAGE STARTS -->
 
-	<div class="test__rich-text"><?php the_field('rich_text'); ?></div>
+	<div class="test__rich-text">
+		<?php the_field('rich_text'); ?>
+	</div>
 	
 	<?php
 	// check if the repeater field has rows of data
@@ -24,9 +25,10 @@
 			
 			$word = get_sub_field('word');
 			$description = get_sub_field('description');
-
 	?>
-			<button class="accordion"><?php echo $word; ?></button>
+			<button class="accordion">
+				<?php echo $word; ?>
+			</button>
 			
 			<div class="panel">
 				<p><?php echo $description; ?></p>
@@ -42,9 +44,6 @@
 	endif;
 
 	?>
-
-
-<!-- ACF - TRICKY WORDS PAGE ENDS -->
 
 </section>	
 	

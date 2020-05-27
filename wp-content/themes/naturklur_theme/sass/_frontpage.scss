@@ -2,11 +2,34 @@
 .frontpage {
   margin-top: 60px;
   margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
 
   &__text {
     font-size: 1.5rem;
     font-weight: 600;
     //border: solid 1px purple;
+  }
+
+  &__pagefields {
+    border: solid 2px blue;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+    &--textblock {
+      border: solid 2px green;
+      width: 600px;
+      margin-right: 15px;
+    }
+  
+    &--image {
+      border: solid 2px red;
+      margin-left: 15px;
+      height: 600px;
+      width: 600px;
+    }
+
   }
 
 }
