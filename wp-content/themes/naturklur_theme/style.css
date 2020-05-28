@@ -5,76 +5,91 @@ Version: 1.0
 Description: Ett tema byggt för examensatbete.
 Author: Elin Gustafsson
 */
-/* NAVBAR */
-/* line 3, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
-.navbar-menu {
-  padding: 20px;
-  background-color: #f6f0e9;
-  box-shadow: 0px 30px 26px -5px rgba(0, 0, 0, 0.1); }
+/* line 1, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
+.navbar-burger {
+  border: #ecbcb0; }
 
-/* line 9, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
+/* line 5, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
+.navbar-menu {
+  display: flex;
+  padding: 20px; }
+  @media screen and (max-width: 1023px) {
+    /* line 5, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
+    .navbar-menu {
+      flex-direction: row; } }
+
+/* line 18, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
 .navbar-start {
   display: flex;
   margin-left: 60px; }
 
-/* line 16, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
+/* line 25, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
 .navbar-end {
   display: flex;
-  text-transform: uppercase; }
-  /* line 23, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
+  text-transform: uppercase;
+  margin-right: 60px; }
+  /* line 32, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
   .navbar-end li {
     display: inline-flex;
     padding-right: 10px; }
-  /* line 31, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
+    @media only screen and (max-width: 1000px) {
+      /* line 32, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
+      .navbar-end li {
+        display: inline-block;
+        flex-direction: row; } }
+  /* line 43, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
   .navbar-end a {
-    color: #2e4e9e;
-    font-weight: 800; }
-  /* line 36, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
+    margin-left: 20px;
+    color: #4a4a4a;
+    font-weight: 400; }
+  /* line 49, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_navigation.scss */
   .navbar-end a:hover {
-    color: #37aa85; }
+    color: #825e5f; }
 
-/* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
+/* line 3, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
 .frontpage {
   margin-top: 60px;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 100px; }
   @media only screen and (max-width: 1000px) {
-    /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
+    /* line 3, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
     .frontpage {
       margin-left: 20px;
       margin-right: 20px; } }
-  /* line 13, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
-  .frontpage__text {
-    font-size: 1.5rem;
-    font-weight: 600; }
-  /* line 19, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
+  /* line 14, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
+  .frontpage__headertext {
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    margin-top: 100px; }
+  /* line 26, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
   .frontpage__pagefields {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 50px; }
     @media only screen and (max-width: 1000px) {
-      /* line 19, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
+      /* line 26, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
       .frontpage__pagefields {
         flex-wrap: wrap; } }
-    /* line 31, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
+    /* line 38, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
     .frontpage__pagefields--textblock {
       width: 500px;
       margin-right: 15px;
-      padding-top: 150px;
+      padding-top: 100px;
       padding-right: 10px; }
       @media only screen and (max-width: 1000px) {
-        /* line 31, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
+        /* line 38, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
         .frontpage__pagefields--textblock {
           margin-right: 0;
           padding-top: 0;
           padding-right: 0; } }
-    /* line 45, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
+    /* line 52, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
     .frontpage__pagefields--image {
       margin-left: 15px;
-      width: 600px; }
+      width: 400px; }
       @media only screen and (max-width: 1000px) {
-        /* line 45, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
+        /* line 52, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_frontpage.scss */
         .frontpage__pagefields--image {
           margin-top: 50px;
           margin-left: 0; } }
@@ -84,30 +99,36 @@ Author: Elin Gustafsson
   margin-top: 60px;
   margin-left: 100px;
   margin-right: 100px; }
-  /* line 7, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
-  .readbook__text {
-    font-size: 1.5rem;
-    font-weight: 600;
+  @media only screen and (max-width: 1000px) {
+    /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+    .readbook {
+      margin-left: 20px;
+      margin-right: 20px; } }
+  /* line 12, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+  .readbook__heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
     margin-bottom: 30px; }
-  /* line 14, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+  /* line 20, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
   .readbook__iframe-container {
     display: flex;
+    margin-top: 100px;
     margin-bottom: 100px;
-    border: solid 2px green;
-    flex-direction: column; }
-    /* line 20, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
-    .readbook__iframe-container .textblock {
-      border: solid 2px red;
-      width: 940px;
-      justify-content: center; }
-    /* line 26, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
-    .readbook__iframe-container iframe {
+    flex-direction: column;
+    align-items: center; }
+    /* line 29, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+    .readbook__iframe-container--textblock {
       display: flex;
-      margin-top: 40px;
-      border: solid 1px lightgray;
-      display: flexbox;
       justify-content: center;
-      border: solid 2px blue; }
+      margin-bottom: 60px;
+      padding-left: 200px;
+      padding-right: 200px; }
+      @media only screen and (max-width: 1000px) {
+        /* line 29, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_readbook.scss */
+        .readbook__iframe-container--textblock {
+          padding-left: 0;
+          padding-right: 0; } }
 
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
 .practice {
@@ -119,15 +140,14 @@ Author: Elin Gustafsson
   flex-direction: column; }
   /* line 11, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
   .practice__text {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2.5rem;
     margin-bottom: 50px; }
-  /* line 18, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+  /* line 17, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
   .practice__icons {
     display: flex;
     justify-content: center;
     margin-bottom: 50px; }
-    /* line 24, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+    /* line 23, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
     .practice__icons--icon {
       display: table-cell;
       width: 20px;
@@ -136,10 +156,10 @@ Author: Elin Gustafsson
       background-color: lightgray;
       margin-left: 10px;
       margin-right: 10px; }
-  /* line 35, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+  /* line 34, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
   .practice__flexible {
     margin-top: 20px; }
-    /* line 39, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+    /* line 38, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
     .practice__flexible--question_text {
       display: flex;
       flex-direction: column;
@@ -147,10 +167,10 @@ Author: Elin Gustafsson
       align-items: center;
       font-weight: bold;
       font-size: 1.2rem; }
-    /* line 50, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+    /* line 49, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
     .practice__flexible--answer_btn {
       margin-top: 30px; }
-      /* line 53, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+      /* line 52, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
       .practice__flexible--answer_btn .items {
         border: solid 2px lightgray;
         border-radius: 20px;
@@ -160,7 +180,7 @@ Author: Elin Gustafsson
         margin-bottom: 10px;
         color: #4a4a4a;
         font-size: 1rem; }
-  /* line 66, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
+  /* line 65, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_practice.scss */
   .practice__result-buttons {
     display: flex;
     justify-content: center;
@@ -234,34 +254,34 @@ button:hover{
 }
 */
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-.trickywords {
+.words {
   margin-top: 60px;
   margin-left: 100px; }
   /* line 6, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-  .trickywords__heading {
+  .words__heading {
     font-size: 1.5rem;
     font-weight: 600; }
   /* line 11, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-  .trickywords__word-list {
+  .words__word-list {
     margin-top: 30px;
     font-size: 1.3rem;
     font-weight: 600;
     width: 200px; }
     /* line 18, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-    .trickywords__word-list--letter {
+    .words__word-list--letter {
       font-weight: bold;
       margin-top: 30px; }
     /* line 24, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-    .trickywords__word-list--underline {
+    .words__word-list--underline {
       border-bottom: solid 4px #37aa3785;
       transition: linear;
       width: 200px; }
   /* line 32, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-  .trickywords__words {
+  .words__words {
     margin-top: 10px;
     margin-bottom: 10px; }
     /* line 36, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_words.scss */
-    .trickywords__words li {
+    .words__words li {
       font-weight: lighter; }
 
 /* line 2, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
@@ -295,13 +315,12 @@ button:hover{
       margin-right: 400px; } }
   /* line 31, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .tricky-words__heading {
-    font-size: 1.5rem;
-    font-weight: 600; }
-  /* line 36, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
+    font-size: 2.5rem; }
+  /* line 35, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .tricky-words__rich-text {
     margin-top: 30px;
     margin-bottom: 100px; }
-  /* line 43, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
+  /* line 42, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .tricky-words .accordion {
     background-color: #fe8a8a;
     color: #4a4a4a;
@@ -316,14 +335,14 @@ button:hover{
     font-size: 1.3rem;
     font-weight: 600;
     border-radius: 10px; }
-  /* line 63, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
+  /* line 62, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .tricky-words .active,
   .tricky-words .accordion:hover,
   .tricky-words button:focus {
     background-color: #ffc53b;
     background: #ffc53b;
     border-radius: 10px; }
-  /* line 73, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
+  /* line 72, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .tricky-words .panel {
     margin-bottom: 10px;
     padding: 0 18px;
@@ -332,16 +351,29 @@ button:hover{
     overflow: hidden;
     border-radius: 10px;
     border: solid 2px purple; }
-  /* line 83, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
+  /* line 82, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .tricky-words .accordion:after {
     content: '\02795';
     /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     float: right;
     margin-left: 5px; }
-  /* line 92, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
+  /* line 91, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_trickywords.scss */
   .tricky-words .active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */ }
+
+/* line 3, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Permanent Marker', cursive; }
+
+/* line 15, ../../../../XAMPP/xamppfiles/htdocs/wp_degree_project/wp-content/themes/naturklur_theme/sass/_typography.scss */
+a {
+  font-family: 'Signika', sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

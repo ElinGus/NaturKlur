@@ -3,12 +3,11 @@
 
 <section class="tricky-words">
 	<div class="tricky-words__heading">
-		<?php if ( have_posts() ):
-			while ( have_posts() ):
-				the_post();
-		    the_title();
-		    the_content();
-		?>
+	<?php if ( have_posts() ):
+			while ( have_posts() ): ?>
+				<?php the_post(); ?>
+				<h1><?php the_title();?></h1>
+				<?php the_content(); ?>
 	</div>
 
 	<div class="tricky-words__accordion">

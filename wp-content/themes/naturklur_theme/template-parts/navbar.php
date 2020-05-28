@@ -9,11 +9,11 @@
       <!-- navbar-start, navbar-end... -->
    
       <div class="navbar-end">
-      <?php
+      <h6><?php
         wp_nav_menu( array(
             'theme_location' => 'header-menu',
         ) );
-      ?>
+      ?></h6>
     </div>
     </div>
 </nav>

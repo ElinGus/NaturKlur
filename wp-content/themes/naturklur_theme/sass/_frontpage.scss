@@ -1,4 +1,5 @@
 
+
 .frontpage {
   margin-top: 60px;
   margin-left: 100px;
@@ -10,16 +11,22 @@
     margin-right: 20px;
   }
 
-  &__text {
-    font-size: 1.5rem;
-    font-weight: 600;
-    //border: solid 1px purple;
+  &__headertext {
+    display: flex;
+    font-size: 2.5rem;
+    //border: solid 2px yellow;
+    justify-content: center;
+    margin-top: 100px;
+
+    @media only screen and (max-width: 1000px) {
+      //width: 330px;
+    }
   }
 
   &__pagefields {
-    //border: solid 2px blue;
+   // border: solid 2px blue;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 50px;
 
     @media only screen and (max-width: 1000px) {
@@ -32,7 +39,7 @@
       //border: solid 2px green;
       width: 500px;
       margin-right: 15px;
-      padding-top: 150px;
+      padding-top: 100px;
       padding-right: 10px;
 
       @media only screen and (max-width: 1000px) {
@@ -45,7 +52,7 @@
     &--image {
       //border: solid 2px red;
       margin-left: 15px;
-      width: 600px;
+      width: 400px;
       
       @media only screen and (max-width: 1000px) {
         margin-top: 50px;

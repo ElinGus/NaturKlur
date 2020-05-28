@@ -4,32 +4,43 @@
   margin-left: 100px;
   margin-right: 100px;
 
-  &__text {
-    font-size: 1.5rem;
-    font-weight: 600;
+  @media only screen and (max-width: 1000px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
     margin-bottom: 30px;
     //border: solid 1px purple;
   }
   
     &__iframe-container  {
       display: flex;
+      margin-top: 100px;
       margin-bottom: 100px;
-      border: solid 2px green;
+      //border: solid 2px green;
       flex-direction: column;
+      align-items: center;
+      
 
-      .textblock {
-        border: solid 2px red;
-        width: 940px;
-        justify-content: center;
-      }
-  
-      iframe {
+      &--textblock {
         display: flex;
-        margin-top: 40px;
-        border: solid 1px lightgray;
-        display: flexbox;
+        //border: solid 2px red;
         justify-content: center;
-        border: solid 2px blue;
+        margin-bottom: 60px;
+        padding-left: 200px;
+        padding-right: 200px;
+
+        @media only screen and (max-width: 1000px) {
+          //border: solid 2px orange;
+          padding-left: 0;
+          padding-right: 0;
+
+          
+        }
       }
     } 
 

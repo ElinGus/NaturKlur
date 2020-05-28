@@ -1,20 +1,4 @@
-var yes = $('input[type=radio].yes:checked').length;
-var no = $('input[type=radio].no:checked').length;
 
-
-    if(yes > no) {   
-        // do something
-        console.log("Yesss");
-        } else
-        // do something
-        console.log("Nooooo");
-        }
-
-
-
-
-
-/*
 // scripts here:
 
 function submitQuiz() {
@@ -86,5 +70,3 @@ $('#submitButton').click(function() {
 });
 
 });    
-
-

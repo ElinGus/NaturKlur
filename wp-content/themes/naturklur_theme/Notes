@@ -303,6 +303,8 @@ Rosa: #fe8a8a
 Gul: #ffc53b
 
 
+
+
 <div class="test__rich-text"><?php the_field('rich_text'); ?></div>
 
 	<div class="test__accordion">
