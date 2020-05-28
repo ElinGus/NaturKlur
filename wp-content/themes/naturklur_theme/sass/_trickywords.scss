@@ -9,6 +9,13 @@
   align-items: center;
   //border: solid 3px goldenrod;
 
+  @media only screen and (max-width: 599px) {
+    //border: solid 2px yellow;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+  }
+
   @media only screen and (min-width: 600px) {
     //border: solid 2px blue;
     margin-left: 100px;
@@ -33,14 +40,14 @@
   }
 
   &__rich-text{
-      margin-top: 30px;
-      margin-bottom: 100px;
+      margin-top: 60px;
+      margin-bottom: 60px;
       //border: solid 2px red; 
   }
 
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
-    background-color: #fe8a8a;
+    background-color: #ecbcb0;
     color: #4a4a4a;
     cursor: pointer;
     padding: 18px;
@@ -62,8 +69,8 @@
   .active, 
   .accordion:hover,
   button:focus {
-    background-color: #ffc53b;
-    background: #ffc53b;
+    background-color: #c49185;
+    background: #c49185;
     border-radius: 10px;
     //border: solid 2px green; 
   }
@@ -76,7 +83,7 @@
     display: none;
     overflow: hidden;
     border-radius: 10px;
-    border: solid 2px purple; 
+    //border: solid 2px lightgrey; 
   }
 
   .accordion:after {
