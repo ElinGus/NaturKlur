@@ -14,11 +14,10 @@
 <div class="result" id="results"></div>
 <div class="practice" id="exercises"></div>
 <div class="buttonsContainer">
-	<button class="previousBtn" id="previous">Previous Question</button>
-	<button class="nextBtn" id="next">Next Question</button>
-	<button class="submitBtn" id="submit">Submit Quiz</button>
+	<button class="previousBtn" id="previous">Förra frågan</button>
+	<button class="nextBtn" id="next">Nästa fråga</button>
+	<button class="submitBtn" id="submit">Ditt resultat</button>
 </div>
-
 </section>
 
 
