@@ -1,3 +1,60 @@
+FRÅGOR:::
+
+
+const askedQuestions = [
+    {
+      question: "Det här beskriver vad luft är.",
+      answers: {
+        a: "En blandning av olika gaser",
+        b: "Rök",
+        c: "Syre",
+        d: "Inget"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Hur kan du märka av luft i vatten?",
+      answers: {
+        a: "Det finns inte luft i vatten",
+        b: "Det smarkar luft",
+        c: "Det blir bubblor",
+        d: "Du hör luften"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Det behöver allt liv på jorden som andas luft.",
+      answers: {
+        a: "Syre",
+        b: "Vätgas",
+        c: "Gas",
+        d: "Kväve"
+      },
+      correctAnswer: "a"
+    },
+    {
+        question: "Kallas det som många bilar släpper ut.",
+        answers: {
+          a: "Avgaser",
+          b: "Olja",
+          c: "Bensin",
+          d: "Smuts"
+        },
+        correctAnswer: "a"
+      }
+  ];
+
+
+
+
+  
+
+
+
+
+
+
+
 <nav>
   <div class="navbar-menu">
     <div class="navbar-start">
@@ -111,16 +168,6 @@ $('#submitButton').click(function() {
 
 });
 */
-
-
-
-
-
-
-
-
-
-
 
 
 // ---------- TEST 1 ---------------------------------------
