@@ -5,34 +5,26 @@
 .navbar-menu {
   display: flex;
   padding: 20px;
-  //background-color: #f6f0e9;
-  //box-shadow: 0px 30px 26px -5px rgba(0,0,0,0.10);
-  //border: solid 3px purple;
 
   @media screen and (max-width: 1023px) {
-    //border: solid 2px green;
     flex-direction: row;
   }  
 }
 
 .navbar-start {
   display: flex;
-  //text-transform: uppercase;
-  //border: solid 2px black;
   margin-left: 60px;
 }
 
 .navbar-end {
   display: flex;
   text-transform: uppercase;
-  //border: solid 2px black;
   margin-right: 60px;
 
 
   li {
     display: inline-flex;
     padding-right: 10px;
-    //border: solid 1px orangered;
 
     @media only screen and (max-width: 1000px) {
       display: inline-block;
@@ -48,7 +40,5 @@
 
   a:hover {
     color: #825e5f;
-    //border-bottom: solid 3px #825e5f;
-    
   }
 }

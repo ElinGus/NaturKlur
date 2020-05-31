@@ -14,34 +14,27 @@
     justify-content: center;
     font-size: 2.5rem;
     margin-bottom: 30px;
-    //border: solid 1px purple;
   }
   
     &__iframe-container  {
       display: flex;
       margin-top: 100px;
       margin-bottom: 100px;
-      //border: solid 2px green;
       flex-direction: column;
       align-items: center;
       
 
       &--textblock {
         display: flex;
-        //border: solid 2px red;
         justify-content: center;
         margin-bottom: 60px;
         padding-left: 200px;
         padding-right: 200px;
 
         @media only screen and (max-width: 1000px) {
-          //border: solid 2px orange;
           padding-left: 0;
-          padding-right: 0;
-
-          
+          padding-right: 0;    
         }
       }
     } 
-
 }
