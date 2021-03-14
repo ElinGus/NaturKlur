@@ -27,7 +27,7 @@
 
 
 
-	<?php // Slutet på wp-loopen
+	<?php // End of loop.
 	endwhile;
 	else: 
 	?>
